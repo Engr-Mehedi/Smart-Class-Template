@@ -8,17 +8,17 @@
 		<script src="https://kit.fontawesome.com/039fb98b14.js" crossorigin="anonymous"></script>
 		<title>স্মার্ট ক্লাস || সাইন আপ </title>
 		<link rel="icon" href="img/logo.ico">
+	
+	
+
+
 	</head>
 	<body class="bangla-font">
 		<div class="wrapper">
 			<nav class="main-nav">
 				<ul>
 					<li><a href="index.html" class="active">হোম</a></li>
-					<li>
-						<a href="videos.html" class="dropdown">
-							ভিডিও সমূহ
-						</a>
-					</li>
+					<li><a href="videos.html">ভিডিও সমূহ</a></li>
 					<li><a href="#">আমাদের সম্পর্কে</a></li>
 					<li><a href="login.html">লগইন</a></li>
 				</ul>
@@ -33,7 +33,7 @@
 						<label for="id_firstname" class="label">
 							নামঃ
 						</label>
-						<input type="text" placeholder="আপনার নাম" id="id_firstname" class="input-field">
+						<input type="text" name="first_name" placeholder="আপনার নাম" id="id_firstname" class="input-field" value="">
 						<label for="id_lastname" class="label">
 							পদবীঃ
 						</label>
@@ -45,11 +45,11 @@
 						<label for="id_password" class="label">
 							পাসওয়ার্ডঃ
 						</label>
-						<input type="text" id="id_password" placeholder="একটি শক্ত পাসওয়ার্ড দিন" class="input-field">
+						<input type="password" id="id_password" placeholder="একটি শক্ত পাসওয়ার্ড দিন" class="input-field">
 						<label for="id_confirm_password" class="label">
 							পাসওয়ার্ড নিশ্চিত করুনঃ
 						</label>
-						<input type="text" id="id_confirm_password" placeholder="পাসওয়ার্ডটি নিশ্চিত করুন " class="input-field">
+						<input type="password" id="id_confirm_password" placeholder="পাসওয়ার্ডটি নিশ্চিত করুন " class="input-field">
 						<div class="left-right">
 							<label for="id_account_type" class="label">
 								একাউন্টের ধরনঃ
@@ -65,7 +65,7 @@
 						</label>
 							<input type="text" id="id_contact" placeholder="উদাহরণঃ +৮৮০১Xxxxxxxxx" class="input-field">
 
-						<button class="btn btn-primary">সাইন আপ</button>
+						<button class="btn btn-primary" name="submit" id="id_submit" onclick="">সাইন আপ</button>
 					</form>
 				</div>
 			</section>
