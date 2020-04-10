@@ -1,0 +1,55 @@
+/*CSS variables*/
+:root {
+	--primary: #eaeaea;
+	--dark: #333;
+	--secondary: #ccc;
+	--light: #fff;
+	--smart: #ddd;
+	--danger: #e00419;
+	--shadow: 0 1px 5px 0 rgba(104, 104, 104, 0.8);
+}
+
+.nav-section {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	justify-content: center;
+}
+.class-nav ul {
+	display: grid;
+	grid-gap: 0.6rem;
+	grid-template-columns: repeat(5, 1fr);
+	list-style: none;
+	padding: 0;
+	margin-top: 0.8rem;
+}
+.class-nav ul a {
+	text-decoration: none;
+	display: block;
+	background-color: var(--smart);
+	box-shadow: var(--shadow);
+	text-align: center;
+	padding: 0.4rem 1rem;
+	border: none;
+
+}
+.class-nav a:hover {
+	background-color: #c1f676;
+}
+.class-nav ul ul {
+	display: none;
+}
+.class-nav ul li:hover ul {
+	display: block;
+}
+.class-nav ul li:hover ul ul {
+	display: none;
+}
+.class-nav .selected {
+	background-color: #c1f672;
+}
+.field {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: 1fr 6fr;
+}
